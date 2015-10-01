@@ -1,0 +1,71 @@
+@font-face
+{ /* Define a new font called quicksand */
+    font-family: 'quicksand';
+    src: url('../fonts/quicksand/quicksand-regular-webfont.eot');
+    src: url('../fonts/quicksand/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/quicksand/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand/quicksand-regular-webfont.svg#quicksand') format('svg');
+}
+
+body
+{
+	background-image: url("../img/bg.jpg");
+}
+
+body, #linkDisplay
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+img
+{
+	border-radius: 30%;
+}
+
+.appImg
+{
+	width: 128px;
+	height: 128px;
+	box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.75);
+	margin-bottom: 20px;
+}
+
+.appLi
+{
+	display: inline-block;
+	width: 160px;
+	padding: 40px;
+	text-align: center;
+}
+
+#linkDisplay
+{
+	text-align: center;
+}
+
+.listImg
+{
+	width: 16px;
+	height: 16px;
+}
+
+a
+{
+	color: #fff;
+	text-decoration: none;
+	font-family: quicksand;
+	font-size: 18px;
+}
+
+a:hover
+{
+	color: #abd2cc;
+}
+
+#appImg:hover
+{
+	box-shadow: 5px 8px 10px 0px rgba(0,0,0,0.75);
+}
