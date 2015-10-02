@@ -8,6 +8,19 @@
          url('../fonts/quicksand/quicksand-regular-webfont.svg#quicksand') format('svg');
 }
 
+.preload *
+ {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+::-webkit-scrollbar
+{
+	display: none;
+}
+
 body
 {
 	background-image: url("../img/bg.jpg");
@@ -17,12 +30,53 @@ body, #linkDisplay
 {
 	margin: 0px;
 	padding: 0px;
-	width: 100%;
 }
 
 img
 {
-	border-radius: 30%;
+	border-radius: 40%;
+}
+
+form input
+{
+	position: relative;
+	top:7.5px;
+	border: none;
+	outline: none;
+	background-color: rgba(0,0,0,0.0);
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+	
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+form input:focus
+{
+	background-color: #fff;
+	
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+#searchBackGround
+{
+	margin: auto;
+	width: 493px;
+	height: 35px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+#searchBar
+{
+	margin: auto;
+	text-align: center;
 }
 
 .appImg
@@ -36,9 +90,10 @@ img
 .appLi
 {
 	display: inline-block;
-	width: 160px;
-	padding: 40px;
+	width: 168px;
+	margin: auto;
 	text-align: center;
+	margin-top: 40px;
 }
 
 #linkDisplay
@@ -48,11 +103,13 @@ img
 
 .listImg
 {
+	margin: 0px;
 	width: 16px;
 	height: 16px;
+	vertical-align: top;
 }
 
-a
+a, p
 {
 	color: #fff;
 	text-decoration: none;
@@ -65,7 +122,26 @@ a:hover
 	color: #abd2cc;
 }
 
-#appImg:hover
+.appImg:hover
 {
 	box-shadow: 5px 8px 10px 0px rgba(0,0,0,0.75);
+}
+
+footer
+{
+	margin-top: 75px;
+}
+
+.copyright
+{
+	width: 400px;
+	text-align: center;
+	margin: auto;
+	height: 40px;
+}
+
+strong, em, i
+{
+	text-decoration: none;
+	font-weight: none;
 }
