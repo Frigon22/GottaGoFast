@@ -98,8 +98,16 @@ form input:focus
 #searchBar
 {
 	margin: auto;
-	padding: 20px;
+	padding: 0px 15px;
 	text-align: center;
+}
+
+@media screen and (max-width: 480px)
+{
+	form input
+	{
+		width: 90%;
+	}
 }
 
 #searchBarCentered
@@ -114,6 +122,11 @@ form input:focus
 	height: 128px;
 	box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.75);
 	margin-bottom: 20px;
+	
+	moz-transition: width 2s, height 2s;
+	-webkit-transition: width 2s, height 2s;
+	-o-transition: width 2s, height 2s;
+	transition: width 2s, height 2s;
 }
 
 .appLi
@@ -123,6 +136,11 @@ form input:focus
 	margin: auto;
 	text-align: center;
 	margin-top: 40px;
+	
+	moz-transition: width 2s;
+	-webkit-transition: width 2s;
+	-o-transition: width 2s;
+	transition: width 2s;
 }
 
 #linkDisplay
@@ -144,6 +162,12 @@ a, p
 	text-decoration: none;
 	font-family: quicksand;
 	font-size: 18px;
+	text-align: center;
+	
+	moz-transition: font-size 2s;
+	-webkit-transition: font-size 2s;
+	-o-transition: font-size 2s;
+	transition: font-size 2s;
 }
 
 a:hover
@@ -163,7 +187,6 @@ footer
 
 .copyright
 {
-	width: 400px;
 	text-align: center;
 	margin: auto;
 	height: 40px;
@@ -173,4 +196,38 @@ strong, em, i
 {
 	text-decoration: none;
 	font-weight: none;
+}
+
+@media screen and (max-width: 720px)
+{
+	.appImg
+	{
+		width: 64px;
+		height: 64px;
+		
+		moz-transition: width 2s, height 2s;
+		-webkit-transition: width 2s, height 2s;
+		-o-transition: width 2s, height 2s;
+		transition: width 2s, height 2s;
+	}
+	
+	.appLi
+	{
+		width: 90px;
+		
+		moz-transition: width 2s;
+		-webkit-transition: width 2s;
+		-o-transition: width 2s;
+		transition: width 2s;
+	}
+	
+	a, .copyright
+	{
+		font-size: 10px;
+		
+		 moz-transition: font-size 2s;
+		-webkit-transition: font-size 2s;
+		-o-transition: font-size 2s;
+		transition: font-size 2s;
+	}
 }
